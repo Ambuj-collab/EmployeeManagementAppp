@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body,
+.submit-button {
+	background: linear-gradient(to left, #33ccff 10%, #ff99cc 100%);
+}
+
+.login-form,
+.signup-form {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+.inputs {
+	width: 70%;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+}
+
+header>h1 {
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+
+.inputs:focus {
+	border-color: green;
+	border-width: 2px;
+	outline: 2px dotted #000
+}
+
+.hide {
+	display: none;
+}
+
+.signup-modal,
+.login-modal {
+	position: relative;
+	top: 33%;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+}
+
+.close {
+	float: right;
+	margin: 10px;
+	border-radius: 35%;
+}
+
+.modal-wrapper {
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.registration-status,
+.login-status {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	padding: 40px 0px 25px 0px;
+	color: red;
+	font-family: 'Kanit', sans-serif;
+}
+
+.server-message {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.space-from-left-and-right {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.modal-login-btn {
+	margin-bottom: 20px;
+}
+
+button.inputs.submit-button {
+	box-shadow: 0 7px #999;
+}
+
+button.inputs.submit-button:active {
+	background: green;
+	color: white;
+	box-shadow: 0 3px rgb(25, 25, 25);
+	transform: translateY(4px);
+}
+
+@media(min-width: 650px) {
+	.container {
+		max-width: 475px;
+	}
+}

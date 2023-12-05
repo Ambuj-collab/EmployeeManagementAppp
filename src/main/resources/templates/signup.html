@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Management</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/login_signup.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Welcome to Employee Management Application</h1>
+	</header>
+	<div class="signup-form container text-center mt-5 pb-5">
+		<h1 class="py-5">Sign Up</h1>
+		<form id="signup_form" action="" method="post">
+			<input class="inputs" type="text" name="firstname" placeholder="First Name" required />
+			<input class="mt-4 inputs" type="text" name="lastname" placeholder="Last Name" />
+			<input class="mt-4 inputs" type="email" name="email" placeholder="Email" required />
+			<input class="mt-4 inputs" type="password" name="password" placeholder="Password" required />
+			<input class="mt-4 inputs" type="password" name="confirmPassword" placeholder="Confirm Password" required />
+			<div class="mt-4 py-3">
+				<button class="inputs submit-button" type="submit">Sign Up</button>
+			</div>
+		</form>
+		<p class="mt-5" style="display: inline-block;">Already a member? <a style="text-decoration: none;"
+				href="/login">Login</a></p>
+	</div>
+
+	<div class="modal-wrapper hide">
+		<div class="signup-modal signup-form">
+			<button type="button" class="close">&times;</button>
+			<h1 class="registration-status"></h1>
+			<div class="server-message">
+				<h5 class="add-message"></h5>
+			</div>
+			<div id="modal-login-button" class="text-center hide">
+				<button type="button" class="btn btn-success modal-login-btn"><a style="color: white; text-decoration: none;" href="/login">Login now</a></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/js/signup.js"></script>
+</body>
+
+</html>
